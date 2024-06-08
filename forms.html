@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+
+    <body>
+        <form>
+            <label><b> not formatted properly</b></label>
+            <br/>
+            <label>Username:</label>
+            <input type="text" placeholder="please enter your username" required/>
+
+            <br/>
+            <br/>
+            <label>Password:</label>
+            <input type="password" placeholder="enter password" required/>
+        
+            <br/>
+            <br/>
+            <label>Gender:</label>
+            <input type="radio" name="sharu"/><label>male</label>
+            <input type="radio" name="sharu"/><label>female</label>
+            <input type="radio" name="sharu"/><label>not to say</label>
+            <br/>
+            <br/>
+
+            <label>Select courses you are aware</label> <!-- name attribute is actually optionally but it is preferred to write to make sure that all the checkbox belongs to group select courses you are aware-->
+            <input type="checkbox" name="sharu"/><label>C</label>
+            <input type="checkbox" name="sharu" /><label>C++</label>
+            <input type="checkbox" name="sharu" /><label>Java</label>
+            <input type="checkbox" name="sharu" /><label>Python</label>
+            <br/>
+            <br/>
+
+            <label>DoB:</label>
+            <input type="date"/>
+            <br/>
+            <br/>
+
+            <label>Choose your course</label>
+            <select>
+                <option value="cs">Computer Science</option>
+                <option value="is">Information Science</option>
+                <option value="ec">Electronics and Communication</option>
+                <option value="ci">Civil</option>
+                <option value="mech">Mechanical</option>
+                <option value="elec">Electrical</option>
+            </select>
+            <br/>
+            <br/>
+
+            <label>Upload resume:</label>
+            <input type="file"/>
+            <br/>
+            <br/>
+            
+            <input type="submit"/> 
+            <input type="reset" />
+        <hr/>
+            <br/>
+            <label><b>Formatted properly using table</b></label>
+            <br/>
+        <table>
+            <tr>
+                <td><label>Username:</label></td>
+                <td><input type="text" placeholder="please enter your username" required/> </td>                </td>
+            </tr>
+
+            <tr>
+                <td><label>Password:</label></td>
+                <td><input type="password" placeholder="enter password" required/></td>
+            </tr>
+
+            <tr>
+                <td><label>Gender:</label></td>
+                <td><input type="radio" name="sharu"/><label>male</label>
+                    <input type="radio" name="sharu"/><label>female</label>
+                    <input type="radio" name="sharu"/><label>not to say</label> </td>
+            </tr>
+
+            <tr>
+                <td><label>Select courses you are aware</label></td>
+                <td><input type="checkbox" name="sharu"/><label>C</label>
+                    <input type="checkbox" name="sharu" /><label>C++</label>
+                    <input type="checkbox" name="sharu" /><label>Java</label>
+                    <input type="checkbox" name="sharu" /><label>Python</label></td>
+            </tr>
+
+            <tr>
+                <td><label>DoB:</label></td>
+                <td><input type="date"/></td>
+            </tr>
+
+            <tr>
+                <td><label>Choose your course</label></td>
+                <td><select>
+                    <option value="cs">Computer Science</option>
+                    <option value="is">Information Science</option>
+                    <option value="ec">Electronics and Communication</option>
+                    <option value="ci">Civil</option>
+                    <option value="mech">Mechanical</option>
+                    <option value="elec">Electrical</option>
+                </select></td>
+            </tr>
+
+            <tr>
+                <td><label>Upload resume:</label></td>
+                <td><input type="file"/></td>
+            </tr>
+
+            <tr>
+                <td><input type="submit"/> 
+                <input type="reset" /></td>
+            </tr>
+
+        </table>
+        </form>
+
+    </body>
+</html>
